@@ -2,7 +2,13 @@
 
 A generalized Choregraphe project for reproducible **lang**uage-based HRI **ex**periments.
 
-This software is licensed under [MIT licence](LICENSE).
+## License
+
+This software is licensed under [MIT licence](LICENSE):
+
+| Permissions                                                               | Limitations                 | Conditions                   |
+|---------------------------------------------------------------------------|-----------------------------|------------------------------|
+|  - Commercial use<br> - Modification<br> - Distribution<br> - Private use |  - Liability<br> - Warranty | License and copyright notice |
 
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
