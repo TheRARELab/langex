@@ -12,8 +12,14 @@ This software is licensed under [MIT licence](LICENSE):
 
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
+    - A NAO or Pepper robot that Choreograph can run on
+    - Choreograph
+    - Windows/Ubuntu
  - Versions the software has been tested on.
+    - Choreograph 2.5
+    - Windows 10/Ubuntu 20.04
  - Any required non-standard hardware [including specific makes and models for robotic platforms].
+    - [NAO](https://www.aldebaran.com/en/nao)) or Pepper by Aldebaran Robotics
 
 ## Installation guide
  - Instructions on how to install the software or run the code.
