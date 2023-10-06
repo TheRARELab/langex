@@ -12,11 +12,11 @@ This software is licensed under [MIT licence](LICENSE):
 
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
-    - Choreograph
-    - macOS/Windows/Ubuntu
+    - Choreograph 2.5
+    - Ubuntu 14.04+/Windows 7+/macOS 10.11+
  - Versions the software has been tested on.
     - Choreograph 2.5
-    - Windows 10/Ubuntu 20.04
+    - Windows 10 and Ubuntu 20.04
  - Any required non-standard hardware [including specific makes and models for robotic platforms].
     - [NAO](https://www.aldebaran.com/en/nao) or [Pepper](https://www.aldebaran.com/en/pepper) by Aldebaran Robotics
 
