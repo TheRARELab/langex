@@ -34,4 +34,8 @@ This software is licensed under [MIT licence](LICENSE):
 
 ## Maintenance and Contribution
 
-TODO
+Please use Issues for any questions and Pull Requests (PR) for contribution. We particularly welcome PR with adapted code with this project.
+
+Maintainers:
+ - anonymized <email>
+ - anonymized <email>
