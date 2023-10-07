@@ -21,7 +21,9 @@ This software is licensed under [MIT licence](LICENSE):
     - [NAO](https://www.aldebaran.com/en/nao) or [Pepper](https://www.aldebaran.com/en/pepper) by Aldebaran Robotics
 
 ## Installation guide
- - Download and install Choreograph 2.5 by following the [official installation guide](http://doc.aldebaran.com/2-5/software/choregraphe/installing.html)
+ - [Download Choreograph 2.5]([url](https://www.aldebaran.com/en/support/pepper-naoqi-2-9/downloads-softwares)) ([Windows](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-win32-setup.exe), [macOS](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-mac64-setup.dmg), [Linux](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-linux64-setup.run))
+ - Install Choreograph 2.5 by following the [official installation guide](http://doc.aldebaran.com/2-5/software/choregraphe/installing.html)
+   - Licence key: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
 
 ## Demo
  - Instructions for the demo of the code.
