@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="rf-experiment-3b0e11" version="0.0.0">
+ <names>
+  <name lang="en_US">rf-experiment</name>
+ </names>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="init_pose">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
