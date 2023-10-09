@@ -1,0 +1,132 @@
+---
+title: "Preprocess log"
+output:
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r}
+library(dplyr)
+library(readr)
+library(stringr)
+library(tidyr)
+```
+
+```{r}
+d.log = list.files(path="event log", full.names = TRUE) %>% 
+  lapply(read.csv) %>% 
+  bind_rows 
+```
+
+## Remove empty last rows
+
+```{r}
+d.log.na = d.log[d.log$Utterance == "", ]
+```
+
+```{r}
+d.log = d.log[ ! d.log$Utterance == "", ]
+```
+
+## Use PID as col name
+
+```{r}
+d.log$Participant = str_to_title(d.log$Participant)
+colnames(d.log)[1] <- "PID"
+```
+
+## interval start & end
+
+```{r}
+d.log = d.log[d.log$Event == "UtterEnd" | d.log$Event == "InstructEnd", ]
+```
+
+```{r}
+write.csv(d.log, "log.csv", row.names = FALSE)
+```
+
+
+## Instruction Completion Time
+
+```{r}
+d.log$Timestamp = strptime(d.log$Timestamp, "%Y-%m-%d %H:%M:%OS")
+op <- options(digits.secs=6)
+```
+
+```{r}
+d.instruction.completion.time = d.log %>% pivot_wider(id_cols=c(PID, Condition, Utterance), values_from = c(Timestamp), names_from = c(Event))
+d.instruction.completion.time$`Instruction Completion Time` = with(d.instruction.completion.time, difftime(InstructEnd, UtterEnd, units="sec"))
+d.instruction.completion.time = d.instruction.completion.time[, ! names(d.instruction.completion.time) %in% c("InstructEnd", "UtterEnd")]
+```
+
+
+## Timeout: Remove those data over 1 minute
+
+```{r}
+d.instruction.completion.time.excl = d.instruction.completion.time[d.instruction.completion.time$`Instruction Completion Time` > 60, ]
+d.instruction.completion.time = d.instruction.completion.time[ ! d.instruction.completion.time$`Instruction Completion Time` > 60, ]
+
+d.instruction.completion.time$Condition = factor(d.instruction.completion.time$Condition)
+d.instruction.completion.time$PID = factor(d.instruction.completion.time$PID)
+d.instruction.completion.time$`Instruction Completion Time` = as.numeric(d.instruction.completion.time$`Instruction Completion Time`)
+
+```
+
+```{r}
+write.csv(d.instruction.completion.time, "instruction-completion-time.csv", row.names = FALSE)
+```
+
+### wide format
+
+```{r}
+d.instruction.completion.time.wide = d.instruction.completion.time %>% group_by(Condition) %>%
+  mutate(id = row_number()) %>%
+ pivot_wider(id_cols=c(id), values_from = `Instruction Completion Time`, names_from = Condition)
+```
+
+```{r}
+write.csv(d.instruction.completion.time.wide, "instruction-completion-time-wide.csv")
+```
+
+## aggre
+
+```{r}
+d.instruction.completion.time.mean = aggregate(d.instruction.completion.time$`Instruction Completion Time`, by = d.instruction.completion.time[c("PID", "Condition")], FUN=mean)
+names(d.instruction.completion.time.mean)[names(d.instruction.completion.time.mean) =='x'] = "Instruction Completion Time"
+
+d.instruction.completion.time.mean$Condition = factor(d.instruction.completion.time.mean$Condition)
+d.instruction.completion.time.mean$PID = factor(d.instruction.completion.time.mean$PID)
+d.instruction.completion.time.mean$`Instruction Completion Time` = as.numeric(d.instruction.completion.time.mean$`Instruction Completion Time`)
+```
+
+```{r}
+write.csv(d.instruction.completion.time.mean, "instruction-completion-time-mean.csv", row.names = FALSE)
+```
+
+```{r}
+d.instruction.completion.time.mean.wide = d.instruction.completion.time.mean %>% pivot_wider(id_cols=c(PID), values_from = `Instruction Completion Time`, names_from = Condition)
+```
+
+```{r}
+write.csv(d.instruction.completion.time.mean.wide, "instruction-completion-time-mean-wide.csv")
+```
+
+## total time
+
+### long
+
+```{r}
+d.completion.time = aggregate(d.log$Timestamp, by = d.log[c("PID", "Condition")], FUN=max) %>% select(PID, Condition)
+d.completion.time$`Completion Time` = (aggregate(d.log$Timestamp, by = d.log[c("PID", "Condition")], FUN=max)[3] - aggregate(d.log$Timestamp, by = d.log[c("PID", "Condition")], FUN=min)[3])$x
+
+write.csv(d.completion.time, "completion-time.csv", row.names = FALSE)
+```
+
+### wide
+
+```{r}
+d.completion.time.wide = d.completion.time %>% pivot_wider(id_cols=c(PID), values_from = c(`Completion Time`), names_from = c(Condition))
+d.completion.time.wide$Total = d.completion.time.wide$random + d.completion.time.wide$`indefinite-nouns` + d.completion.time.wide$model
+
+write.csv(d.completion.time.wide, "completion-time-wide.csv", row.names = FALSE)
+```
