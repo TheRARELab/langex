@@ -348,7 +348,7 @@ class MyClass(GeneratedClass):
 
         #append header
         with open(logfile, 'w') as f:
-            f.write('Participant,Condition,Quadrant,Utterance,Event,Timestamp\n')
+            f.write('Participant,Condition,' + self.memory.getData("Exp/Condition").replace("-", ",") + ',Event,Timestamp\n')
 
         self.onStopped() #activate the output of the box
         pass
