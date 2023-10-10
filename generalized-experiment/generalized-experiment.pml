@@ -7,7 +7,6 @@
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
-        <File name="README" src="README.md" />
         <File name="3-c" src="utterances/3-c.csv" />
     </Resources>
     <Topics />
