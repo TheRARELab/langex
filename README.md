@@ -25,6 +25,8 @@ This software is licensed under [MIT licence](LICENSE):
  - Install Choreograph 2.5 by following the [official installation guide](http://doc.aldebaran.com/2-5/software/choregraphe/installing.html)
    - Licence key: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
 
+For people who are not familier with Choreograph, [this guide](http://doc.aldebaran.com/2-5/getting_started/creating_applications/index.html) should be good enough to get you started.
+
 ## Demo
  - Instructions for the demo of the code.
  - Expected output.
