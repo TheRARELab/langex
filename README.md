@@ -10,6 +10,8 @@ This software is licensed under [MIT licence](LICENSE):
 |---------------------------------------------------------------------------|-----------------------------|------------------------------|
 |  ✅ Commercial use<br> ✅ Modification<br> ✅ Distribution<br> ✅ Private use |  ❌ Liability<br> ❌ Warranty | License and copyright notice |
 
+[The project](https://osf.io/nzwvf/) that is generalized is also under MIT licence: https://osf.io/nzwvf/.
+
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
     - Choreograph 2.5
