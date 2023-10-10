@@ -10,7 +10,7 @@ This software is licensed under [MIT licence](LICENSE):
 |---------------------------------------------------------------------------|-----------------------------|------------------------------|
 |  ✅ Commercial use<br> ✅ Modification<br> ✅ Distribution<br> ✅ Private use |  ❌ Liability<br> ❌ Warranty | License and copyright notice |
 
-[The project](https://osf.io/nzwvf/) that is generalized is also under MIT licence: https://osf.io/nzwvf/.
+The project (anonymized) that is generalized is also under MIT licence: [anonymized].
 
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
@@ -36,7 +36,7 @@ For people who are not familier with Choreograph, [this guide](http://doc.aldeba
    - Run the project based on the instructions for running the [hello-world project](http://doc.aldebaran.com/2-5/getting_started/helloworld_choregraphe.html).
      - First run the behavior in the `initialize_post` folder
      - Then run the behavior in the `experiment_behavior` folder
-   - As you run the program, type `next` or `n` to make the robot speak the next utterance
+   - As you run the program, type `next` or `n` in the dialog panel to make the robot speak the next utterance
  - Expected output.
    - The robot should behave and speak exactly the same as this video: https://www.youtube.com/shorts/5plLXZN3D0E
 
@@ -48,5 +48,5 @@ For people who are not familier with Choreograph, [this guide](http://doc.aldeba
 Please use Issues for any questions and Pull Requests (PR) for contribution. We particularly welcome PR with adapted code with this project.
 
 Maintainers:
- - anonymized <email>
- - anonymized <email>
+ - anonymized, email
+ - anonymized, email
