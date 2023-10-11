@@ -41,7 +41,15 @@ For people who are not familier with Choreograph, [this guide](http://doc.aldeba
    - The robot should behave and speak exactly the same as this video: https://www.youtube.com/shorts/5plLXZN3D0E
 
 ## Instructions for use
- - 
+ - Open the project in the [`generalized-experiment`](generalized-experiment) folder by clicking on `generalized-experiment.pml`.
+ - The current project is named “general-experiment” and it should be changed in the property of the project and editing the “manifest.xml” file.
+ - The “Factor 1” and “Factor 2” nodes should be changed both in their name and the list content.
+   - If there are more than three factors, the “Factor 2” and “Append Factor 2” should be duplicated to ensure the third factor appears in the log filename, log header, and log rows.
+ - The dialog content needs to be placed in the “utterances” directory at the project root. Each condition should have a dialog file named “factor1-factor2-factor3.txt”
+ - To specify where the log directory is, simply change the content of the “Log directory” node
+ - For start and end phrases, they can also be changed in the two text box nodes with the same names
+ - One last change is the robot’s initial behavior, which can be found in the “initialize_pose” folder.
+   - To change the robot’s pose, e.g., to look at the table in front of it, after it speaks the start phase, the node “See Table” (See mid-left of Figure 1) can be used for this purpose by changing its parameters, the offset values (x,y,z) and the reference frame, e.g., torso.
 
 ## Maintenance and Contribution
 
