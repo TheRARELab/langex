@@ -15,7 +15,7 @@ The project (anonymized) that is generalized is also under MIT licence: [anonymi
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
     - Choreograph 2.5
-    - Ubuntu 14.04+/Windows 7+/macOS 10.11+
+    - Ubuntu 14.04+/Windows 7+
  - Versions the software has been tested on.
     - Choreograph 2.5
     - Windows 10 and Ubuntu 20.04
@@ -23,7 +23,7 @@ The project (anonymized) that is generalized is also under MIT licence: [anonymi
     - [NAO](https://www.aldebaran.com/en/nao) or [Pepper](https://www.aldebaran.com/en/pepper) by Aldebaran Robotics
 
 ## Installation guide
- - [Download Choreograph 2.5](https://www.aldebaran.com/en/support/pepper-naoqi-2-9/downloads-softwares) ([Windows](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-win32-setup.exe), [macOS](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-mac64-setup.dmg), [Linux](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-linux64-setup.run))
+ - [Download Choreograph 2.5](https://www.aldebaran.com/en/support/pepper-naoqi-2-9/downloads-softwares) ([Windows](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-win32-setup.exe), [Linux](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-linux64-setup.run))
  - Install Choreograph 2.5 by following the [official installation guide](http://doc.aldebaran.com/2-5/software/choregraphe/installing.html)
    - Licence key: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
 
