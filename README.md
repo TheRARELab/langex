@@ -15,10 +15,10 @@ The project (anonymized) that is generalized is also under MIT licence: [anonymi
 ## System requirements
  - All software dependencies and operating systems (including version numbers).
     - Choreograph 2.5
-    - Ubuntu 14.04+/Windows 7+
+    - Ubuntu 20.04 & 22.04/Windows 10 & 11
  - Versions the software has been tested on.
     - Choreograph 2.5
-    - Windows 10 and Ubuntu 20.04
+    - Ubuntu 20.04 & 22.04/Windows 10 & 11
  - Any required non-standard hardware [including specific makes and models for robotic platforms].
     - [NAO](https://www.aldebaran.com/en/nao) or [Pepper](https://www.aldebaran.com/en/pepper) by Aldebaran Robotics
 
