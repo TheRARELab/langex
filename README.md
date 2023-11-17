@@ -26,11 +26,11 @@ The project (anonymized) that is generalized is also under MIT licence: [anonymi
  - [Download Choreograph 2.5](https://www.aldebaran.com/en/support/pepper-naoqi-2-9/downloads-softwares) ([Windows](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-win32-setup.exe), [Linux](https://community-static.aldebaran.com/resources/2.5.10/Choregraphe/choregraphe-suite-2.5.10.7-linux64-setup.run))
  - Install Choreograph 2.5 by following the [official installation guide](http://doc.aldebaran.com/2-5/software/choregraphe/installing.html)
    - Licence key: 654e-4564-153c-6518-2f44-7562-206e-4c60-5f47-5f45
- - Specific instruction for installing on Ubuntu 20.04:
+ - Specific instruction for installing on Ubuntu 20.04/22.04:
 ```
 cd "/opt/Softbank Robotics/Choregraphe Suite 2.5/lib/"
-mv libz.so.1 libz.so.1.old
-ln -s /lib/x86_64-linux-gnu/libz.so.1
+sudo mv libz.so.1 libz.so.1.old
+sudo ln -s /lib/x86_64-linux-gnu/libz.so.1
 ```
 
 For people who are not familier with Choreograph, [this guide](http://doc.aldebaran.com/2-5/getting_started/creating_applications/index.html) should be good enough to get you started.
