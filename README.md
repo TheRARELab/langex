@@ -59,8 +59,8 @@ For people who are not familier with Choreograph, [this guide](http://doc.aldeba
 
 ## Maintenance and Contribution
 
-Please use Issues for any questions and Pull Requests (PR) for contribution. We particularly welcome PR with adapted code with this project.
+Please use Issues for any questions and Pull Requests (PR) for contributions. We particularly welcome PR with adapted code with this project.
 
 Maintainers:
- - anonymized, email
- - anonymized, email
+ - uthmantijani@usf.edu
+ - Zhaohan@usf.edu
