@@ -60,7 +60,3 @@ For people who are not familier with Choreograph, [this guide](http://doc.aldeba
 ## Maintenance and Contribution
 
 Please use Issues for any questions and Pull Requests (PR) for contribution. We particularly welcome PR with adapted code with this project.
-
-Maintainers:
- - Uthman Tijani, uthmantijani@usf.edu
- - Zhao Han, zhaohan@usf.edu
